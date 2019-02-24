@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="components/loader.js"></script>
+
+    <!-- Bootstrap 3.3.7 -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="components/loader.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<script>
+  function soma(){
+    var num1 = document.getElementById("num1").value;
+    var num2 = document.getElementById("num2").value;
+    var res = Number(num1) + Number(num2);
+    document.getElementById("res").innerHTML = res;
+  }
+</script>
+
+<body style="margin: 15%">
+    <div class="row">
+      <center>
+        <img src="img/android-calc.png" width="85%">
+      </center>
+	<div class="col-xs3">
+    <center>
+    <br>
+    <form name="calc">
+    <h2>Digite um número: </h2>
+    <input type="number" id="num1">
+    <br>
+  <div class="col-xs3">
+    <br>
+    <h2>Digite outro número: </h2>
+    <input type="number" id="num2">
+    <br>
+  <div class="col-xs3">
+    <br>
+    <h2>Resultado: </h2>
+    <input type="number" id="res" value="soma" onclick="soma()" disabled>
+    <br>
+    <br>
+    <br>
+    </form>
+    </center>
+  <div class="col-xs3">
+    <button class="btn btn-primary btn-block">
+      Soma
+    </button>
+  </div>
+  <br>
+	<div class="col-xs3">
+    <button class="btn btn-warning btn-block">
+      Subtração
+    </button>
+  </div>
+  <br>
+	<div class="col-xs3">
+    <button class="btn btn-danger btn-block">
+      Multiplicação
+    </button>
+  </div>
+  <br>
+	<div class="col-xs3">
+    <button class="btn btn-success btn-block">
+      Divisão
+    </button>
+  </div>
+</div>
+
+</body>
+</html>
